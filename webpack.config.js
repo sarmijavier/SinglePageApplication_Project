@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin') // necesario para traba
 
 //módulo de coniguración
 module.exports = {
-    entry: '.src/index.js ', // punto de entrada
+    entry: './src/index.js', // punto de entrada
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'main.js'
@@ -29,7 +29,7 @@ module.exports = {
         new HtmlWebpackPlugin([
             {
                 inject: true,
-                template: '.public/index.html',
+                template: './public/index.html',
                 filename: './index.html',
             }
         ])
