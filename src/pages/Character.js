@@ -1,11 +1,11 @@
 const Character = () => {
     const view = `
-        <div class="Character-inner">
-            <article class="Chracter-card">
+        <div class="Characters-inner">
+            <article class="Chracters-card">
                 <img src="image" alt="name">
                 <h2>Name</h2>
             </article>
-            <article class="Character-card">
+            <article class="Characters-card">
                 <h3>Episodes:</h3>
                 <h3>Status:</h3>
                 <h3>Species:</h3>
