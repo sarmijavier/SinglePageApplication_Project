@@ -1,5 +1,6 @@
 const path = require('path') // a donde vamos acceder es decir las carpetas
 const HtmlWebpackPlugin = require('html-webpack-plugin') // necesario para trabajar con HTLM
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 //módulo de coniguración
 module.exports = {
@@ -32,6 +33,12 @@ module.exports = {
                 template: './public/index.html',
                 filename: './index.html',
             }
-        )
-    ]
+        ),
+        new CopyWebpackPlugin({
+                patterns: [{
+                        from: './src/styles/style.css',
+                        to: ''
+                }]
+        }),
+    ],
 }
